@@ -4,20 +4,20 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - white
-  - black
-  - moveValid
-  - stock
-  - shop
-  - stockPos
-  - waveHandler
-  - inputHandler
-  - loseScreen
+  - CinemachineTarget
+  - clipboardUI
+  - subjectName
+  - subjectAge
+  - subjectAddress
+  - subjectSymptoms
+  - subjectTreatment
+  - subjectNotes
+  - subjectDiagnosis
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - moveValid
+  - 
   - Water
   - UI
   - 
