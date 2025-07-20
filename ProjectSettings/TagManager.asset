@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - CinemachineTarget
+  - clipboardUI
+  - subjectName
+  - subjectAge
+  - subjectAddress
+  - subjectSymptoms
+  - subjectTreatment
+  - subjectNotes
+  - subjectDiagnosis
   layers:
   - Default
   - TransparentFX
