@@ -19,6 +19,7 @@ public class interactScript : MonoBehaviour
     public float playerDist; //distance to the player
     public float range; //distance player must be within to interact
     public float hoverRadius; //how far out the UIInteract hovers
+    public float defaultScale; //localsize when player is at distance 1u
 
     // Start is called before the first frame update
     void Start()
@@ -35,8 +36,9 @@ public class interactScript : MonoBehaviour
             if (!disabled)
             {
                 UIInteract.SetActive(true);
-                UIInteract.transform.position = gameObject.transform.position + (playerCamera.transform.position - gameObject.transform.position).normalized * hoverRadius;
+                UIInteract.transform.position = gameObject.transform.position + (playerCamera.transform.position - gameObject.transform.position).normalized * hoverRadius * playerDist;
                 UIInteract.transform.rotation = Quaternion.LookRotation(transform.position - playerCamera.transform.position);
+                UIInteract.transform.localScale = Vector3.one * defaultScale * playerDist;
             }
             else UIInteract.SetActive(false);
             if (interactionType == interactionType.HOLD)

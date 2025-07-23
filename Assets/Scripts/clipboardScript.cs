@@ -47,11 +47,22 @@ public class clipboardScript : MonoBehaviour
     void Start()
     {
         interactScript = GetComponent<interactScript>();
+        gameController = GameObject.FindGameObjectWithTag("GameController");
+        clipboardUI = gameController.GetComponent<controllerScript>().clipboardUI;
+       
+
+        NameTXT = GameObject.FindGameObjectWithTag("subjectName");
+        AgeTXT = GameObject.FindGameObjectWithTag("subjectAge");
+        AddressTXT = GameObject.FindGameObjectWithTag("subjectAddress");
+        SymptomsTXT = GameObject.FindGameObjectWithTag("subjectSymptoms");
+        DiagnosisTXT = GameObject.FindGameObjectWithTag("subjectDiagnosis");
+        TreatmentTXT = GameObject.FindGameObjectWithTag("subjectTreatment");
+        NotesTXT = GameObject.FindGameObjectWithTag("subjectNotes");
 
         Subjects subjectsInJSON = JsonUtility.FromJson<Subjects>(subjectsJSON.text);
 
         int rand = UnityEngine.Random.Range(0, subjectsInJSON.subjects.Length);
-        subject = subjectsInJSON.subjects[testNumber];
+        subject = subjectsInJSON.subjects[rand];
         
     }
 
@@ -78,5 +89,7 @@ public class clipboardScript : MonoBehaviour
             TreatmentTXT.GetComponent<TextMeshProUGUI>().text = subject.Treatment;
             NotesTXT.GetComponent<TextMeshProUGUI>().text = subject.Notes;
         }
+        else gameController.GetComponent<controllerScript>().deactivateCursor();
+     
     }
 }

@@ -12,6 +12,7 @@ public class controllerScript : MonoBehaviour
     public GameObject guidePromptUI;
     public GameObject tabletUI;
     public GameObject guideUI;
+    public GameObject clipboardUI;
     public GameObject player;
     public KeyCode openTabletKey;
     public KeyCode openGuideKey;
@@ -24,6 +25,8 @@ public class controllerScript : MonoBehaviour
         activeScreen = guideUI;
         tabletPromptUI.GetComponentInChildren<TextMeshProUGUI>().text = openTabletKey.ToString();
         guidePromptUI.GetComponentInChildren<TextMeshProUGUI>().text = openGuideKey.ToString();
+
+        clipboardUI.SetActive(false);
     }
 
     // Update is called once per frame
