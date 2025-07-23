@@ -27,6 +27,7 @@ using UnityEngine.WSA;
 public class clipboardScript : MonoBehaviour
 {
     public interactScript interactScript;
+    public GameObject gameController;
     public GameObject clipboard;
     public GameObject clipboardUI;
     public GameObject NameTXT;
@@ -46,24 +47,12 @@ public class clipboardScript : MonoBehaviour
     void Start()
     {
         interactScript = GetComponent<interactScript>();
-        /*clipboardUI = GameObject.FindGameObjectWithTag("clipboardUI");
-
-        NameTXT = GameObject.FindGameObjectWithTag("subjectName");
-        AgeTXT = GameObject.FindGameObjectWithTag("subjectAge");
-        AddressTXT = GameObject.FindGameObjectWithTag("subjectAddress");
-        SymptomsTXT = GameObject.FindGameObjectWithTag("subjectSymptoms");
-        DiagnosisTXT = GameObject.FindGameObjectWithTag("subjectDiagnosis");
-        TreatmentTXT = GameObject.FindGameObjectWithTag("subjectTreatment");
-        NotesTXT = GameObject.FindGameObjectWithTag("subjectNotes");*/
 
         Subjects subjectsInJSON = JsonUtility.FromJson<Subjects>(subjectsJSON.text);
-        //Debug.Log(subjectsInJSON.subjects);
-        //Debug.Log(subjectsJSON.text);
-        //foreach (Subject sub in subjectsInJSON.subjects) Debug.Log(sub);
+
         int rand = UnityEngine.Random.Range(0, subjectsInJSON.subjects.Length);
         subject = subjectsInJSON.subjects[testNumber];
         
-        clipboardUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -71,6 +60,7 @@ public class clipboardScript : MonoBehaviour
     {
         interaction = interactScript.interaction;
         if (interaction && clipboard.activeSelf != clipboardUI.activeSelf) toggle();
+        if (gameController.GetComponent<controllerScript>().activeScreen != clipboardUI) clipboard.SetActive(true);
     }
 
     void toggle()
@@ -79,6 +69,7 @@ public class clipboardScript : MonoBehaviour
         clipboardUI.SetActive(!clipboardUI.activeSelf);
         if (clipboardUI.activeSelf)
         {
+            gameController.GetComponent<controllerScript>().changeActiveScreen(clipboardUI);
             NameTXT.GetComponent<TextMeshProUGUI>().text = subject.Name;
             AgeTXT.GetComponent<TextMeshProUGUI>().text = subject.Age;
             AddressTXT.GetComponent<TextMeshProUGUI>().text = subject.Address;

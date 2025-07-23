@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class tabletScript : MonoBehaviour
 {
+
+    public GameObject activeScreen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +17,12 @@ public class tabletScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void goToTabletScreen(GameObject newScreen)
+    {
+        activeScreen.SetActive(false);
+        activeScreen = newScreen;
+        activeScreen.SetActive(true);
     }
 }
