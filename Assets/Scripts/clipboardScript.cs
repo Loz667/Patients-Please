@@ -61,8 +61,8 @@ public class clipboardScript : MonoBehaviour
 
         Subjects subjectsInJSON = JsonUtility.FromJson<Subjects>(subjectsJSON.text);
 
-        int rand = UnityEngine.Random.Range(0, subjectsInJSON.subjects.Length);
-        subject = subjectsInJSON.subjects[rand];
+        testNumber = UnityEngine.Random.Range(0, subjectsInJSON.subjects.Length);
+        subject = subjectsInJSON.subjects[testNumber];
         
     }
 
