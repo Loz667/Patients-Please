@@ -1,23 +1,54 @@
 {
-  "subjects":
-  [
+  "subjects": [
     {
       "Name": "John Doe",
       "Age": "42",
-      "Address": "123 Example Street, Test City, AB12 3DE",
-      "Symptoms": "Difficulty Breathing",
+      "Address": "27 Springfield Rd, Horsham, West Sussex, RH12 2PG, United Kingdom",
+      "Symptoms": "Sweating, dizziness, auditory distortion, mild hallucinations",
       "Diagnosis": "TBD",
       "Treatment": "TBD",
-      "Notes": "Subject seems to keep talking about a 'wife and kids'. We don't know what he's referring to at this time."
+      "Notes": "Subject seems to keep talking about a 'wife and kids'. We don't know what he's referring to at this time.",
+      "Affliction": "Acute Thermal Overload"
     },
     {
       "Name": "Jane Deer",
       "Age": "36",
-      "Address": "16 Test Lane, Example City, XX1 2YY",
-      "Symptoms": "Coughing, Wheezing,",
+      "Address": "Ruskin Rd, Crewe, Cheshire East, CW2 7JT, United Kingdom",
+      "Symptoms": "Fever, vivid dreams, accelerated healing",
       "Diagnosis": "TBD",
       "Treatment": "TBD",
-      "Notes": "Subject seems to keep talking about a 'wife and kids'. We don't know what he's referring to at this time."
+      "Notes": "Take caution when adminstering treatment. Accelerated Healing of subjects has damaged equipment in the past",
+      "Affliction": "Immuno-adaptive flux"
+    },
+    {
+      "Name": "Rex Ball",
+      "Age": "63",
+      "Address": "De Keyserlei 5, Antwerpen, Antwerp, 2018, Belgium",
+      "Symptoms": "Coughing, low blood oxygen, visual snow",
+      "Diagnosis": "TBD",
+      "Treatment": "TBD",
+      "Notes": "LEAVE WHILST YOU STILL CAN",
+      "Affliction": "Mild pulmonary desynchronization"
+    },
+    {
+      "Name": "Stacey Guzman",
+      "Age": "23",
+      "Address": "Degollado - Atotonilco el Alto, Las Limas Degollado, Jalisco, 47980, Mexico",
+      "Symptoms": "Mild nausea, cravings for organic food",
+      "Diagnosis": "TBD",
+      "Treatment": "TBD",
+      "Notes": "Do not feed subject organic food under any circumstances",
+      "Affliction": "Digestive resistance to synthetics"
+    },
+    {
+      "Name": "Kyan Mercado",
+      "Age": "40",
+      "Address": "Yaoyacho (Rokkakudori), Kyoto City, Kyoto Prefecture, 604-8071, Japan",
+      "Symptoms": "Mood shifts, confusion about location",
+      "Diagnosis": "TBD",
+      "Treatment": "TBD",
+      "Notes": "Why are you still here?",
+      "Affliction": "Environmental Detachment Response (EDR)"
     }
   ]
 }

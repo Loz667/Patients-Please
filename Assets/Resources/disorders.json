@@ -1,0 +1,22 @@
+{
+  "disorders": [
+    {
+      "guidebookName": "Acute Thermal Overload (ATO)",
+      "tabletName": "Thermo-Survivor Phase 3",
+      "symptoms": "Reports of extreme heat",
+      "treatment": "Skin Desensitization"
+    },
+    {
+      "guidebookName": "Immuno-adaptive flux",
+      "tabletName": "Neural Infection Type Z",
+      "symptoms": "Talking in sleep, no fever",
+      "treatment": "Lobotomy"
+    },
+    {
+      "guidebookName": "Mild pulmonary desynchronization",
+      "tabletName": "Stage 3 Respiratory Drift",
+      "symptoms": "Talking in sleep, no fever",
+      "treatment": "Lobotomy"
+    }
+  ]
+}
