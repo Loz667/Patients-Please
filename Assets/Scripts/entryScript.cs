@@ -7,6 +7,7 @@ public class entryScript : MonoBehaviour
 
     public GameObject Tablet;
     public GameObject gameController;
+
     
     // Start is called before the first frame update
     void Start()

@@ -9,14 +9,26 @@
     {
       "guidebookName": "Immuno-adaptive flux",
       "tabletName": "Neural Infection Type Z",
-      "symptoms": "Talking in sleep, no fever",
+      "symptoms": "Talking in sleep",
       "treatment": "Lobotomy"
     },
     {
       "guidebookName": "Mild pulmonary desynchronization",
       "tabletName": "Stage 3 Respiratory Drift",
-      "symptoms": "Talking in sleep, no fever",
-      "treatment": "Lobotomy"
+      "symptoms": "Normal breathing, mild confusion",
+      "treatment": "Lung lining abrasion"
+    },
+    {
+      "guidebookName": "Digestive resistance to synthetics",
+      "tabletName": "Root Intrusion Syndrome",
+      "symptoms": "Complaints of 'Hunger'",
+      "treatment": "Amputation of lower limbs"
+    },
+    {
+      "guidebookName": "Environmental Detachment Response (EDR)",
+      "tabletName": "Perceptual Contagion",
+      "symptoms": "Reports of Unreality, Rapid Blinking",
+      "treatment": "Mirror Box Therapy"
     }
   ]
 }
