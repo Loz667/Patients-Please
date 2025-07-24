@@ -26,12 +26,4 @@ public class entryScript : MonoBehaviour
             Tablet.SetActive(true);
         }
     }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            Tablet.SetActive(false);
-        }
-    }
 }
